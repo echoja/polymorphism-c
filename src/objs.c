@@ -65,37 +65,3 @@ void walk_dog(void *raw_self) {
 	self = (t_dog *)raw_self;
 	printf("%s 은 주인인 %s와 함께 산책한다...\n", self->name, self->owner_name);
 }
-
-// void walk_person(t_person *self) {
-// 	printf("%s 은 자신의 집인 %s에서 출발해 %s로 터벅터벅 걸어간다...\n", self->name, self->address, self->company);
-// }
-
-// void walk_dog(t_dog *self) {
-// 	printf("%s 은 주인인 %s와 함께 산책한다...\n", self->name, self->owner_name);
-// }
-
-// int main(void) {
-// 	t_person person;
-// 	person.address = "사당동 8번출구";
-// 	person.age = 26;
-// 	person.company = "이노베이션아카데미";
-// 	person.name = "김철수";
-
-// 	t_dog dog;
-// 	dog.age = 5;
-// 	dog.name = "뭉치";
-// 	dog.owner_name = "김철수";
-
-// 	t_dog another_dog;
-// 	another_dog.age = 3;
-// 	another_dog.name = "삐삐";
-// 	another_dog.owner_name = "김영희";
-
-// 	void *walkable_things[3];
-// 	walkable_things[0] = &person;
-// 	walkable_things[1] = &dog;
-// 	walkable_things[2] = &another_dog;
-
-// 	for (int i = 0; i < 3; i++)
-// 		walk_??(walkable_things[i]);
-// }
