@@ -6,7 +6,7 @@
 #    By: taehokim <taehokim@student.42seoul.kr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/27 17:17:01 by taehokim          #+#    #+#              #
-#    Updated: 2021/04/21 14:50:03 by taehokim         ###   ########.fr        #
+#    Updated: 2021/04/21 21:52:02 by taehokim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,8 +38,8 @@ fclean: clean
 	$(RM) $(NAME)
 
 clean:
-	$(RM) $(OBJECTS) $(TM_OBJECTS) $(RM_OBJECTS)
+	$(RM) $(OBJECTS)
 
 re: fclean all
 
-.PHONY: all bonus clean fclean re norm test .c.o
+.PHONY: all clean fclean re .c.o
