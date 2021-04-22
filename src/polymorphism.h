@@ -17,7 +17,7 @@ typedef struct s_bag
 
 typedef struct s_vtables
 {
-	t_bag printables;
+	t_bag walkables;
 } t_vtables;
 
 typedef struct s_walkable

@@ -5,8 +5,8 @@ t_vtables *get_vtables()
 {
 	static t_vtables t;
 
-	if (!t.printables.arr)
-		t.printables = create_bag();
+	if (!t.walkables.arr)
+		t.walkables = create_bag();
 	return &t;
 }
 
@@ -18,7 +18,7 @@ void do_walk(void *ptr) {
 }
 
 void all_walk() {
-	bag_foreach(&get_vtables()->printables, do_walk);
+	bag_foreach(&get_vtables()->walkables, do_walk);
 };
 
 t_walkable *create_walkable(void *obj, void (*walk_handler)(void *)) {
@@ -27,7 +27,7 @@ t_walkable *create_walkable(void *obj, void (*walk_handler)(void *)) {
 	m(&walkable, sizeof(t_walkable));
 	walkable->object = obj;
 	walkable->walk = walk_handler;
-	bag_add(&get_vtables()->printables, walkable);
+	bag_add(&get_vtables()->walkables, walkable);
 	return walkable;
 }
 
